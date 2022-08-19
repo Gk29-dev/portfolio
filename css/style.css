@@ -44,6 +44,9 @@ header{
     color:#FF013E;
     font-weight: 700;
 }
+.hamburger{
+    display: none;
+}
 .banner-section{
     display: flex;
     flex-direction: row;
@@ -232,8 +235,19 @@ footer{
     header{
         margin:10px;
     }
+    .navbar-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .navbar{
         display: none;
+    }
+    .hamburger{
+        display: block;
+        font-size:30px;
+        float:right;
+        
     }
     .banner-section{
         display: flex;
@@ -253,7 +267,7 @@ footer{
         right:20px;
     }
     #about,#project{
-        margin:100px 10px 100px 30px;
+        margin:100px 20px 100px 20px;
     }
     .aboutme{
         display: flex;
@@ -291,7 +305,6 @@ footer{
         width: 310px;
     }
     .footer-section{
-        width: 100%;
         padding:30px 10px;
     }
     .footer-section h3{
@@ -305,7 +318,12 @@ footer{
         margin:10px 20px;
     }
     .navbar-container{
-        grid-template-columns: 200px 1fr;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-item a{
+        font-size:25px;
     }
     .banner-section{
         margin-top: 40px;
@@ -336,14 +354,25 @@ footer{
         grid-template-columns: 1fr;
     }
     .projects .card{
-        width: 95%;
+        width: 100%;
+    }
+    .card-title h5{
+        font-size:35px;
     }
     .card-img img{
         width: 650px;
         height: 350px;
     }
     .card-btn{
-        width: 50%;
         margin:20px auto;
+    }
+    .card-btn a{
+        font-size:25px;
+    }
+    .footer-section{
+        padding:20px 30px;
+    }
+    .footer-section h3{
+        font-size:25px;
     }
 }
